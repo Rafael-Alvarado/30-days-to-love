@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Dinámica por Día</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #contenido { border: 1px solid #ccc; padding: 20px; min-height: 200px; }
+        .my-soul-regular {
+          font-family: "My Soul", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <h1 >30 </h1>
+    <div id="contenido">
+        Cargando contenido...
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Obtener el ID de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const idDesdeUrl = parseInt(urlParams.get('id')); // Convertir a número entero
+
+            // 2. Obtener el día actual
+            const fechaActual = new Date();
+            const diaActual = fechaActual.getDate(); // Devuelve el día del mes (1-31)
+
+            const contenidoDiv = document.getElementById('contenido');
+
+            // 3. Validar y mostrar contenido
+            if (idDesdeUrl === diaActual) {
+                // Si el ID de la URL coincide con el día actual
+                contenidoDiv.innerHTML = `
+                    <h2 class="my-soul-regular">¡Bienvenido a la Página Principal!</h2>
+                    <p>El ID de la URL (${idDesdeUrl}) coincide con el día actual (${diaActual}).</p>
+                    <p>Aquí puedes mostrar el contenido específico para este día.</p>
+                    <img src="https://via.placeholder.com/400x150/28a745/ffffff?text=Contenido+Principal" alt="Imagen Principal">
+                `;
+            } else {
+                // Si no coincide o el ID no está presente
+                contenidoDiv.innerHTML = `
+                    <h2>Lo sentimos, acceso denegado.</h2>
+                    <p>El ID de la URL (${idDesdeUrl || 'No especificado'}) no coincide con el día actual (${diaActual}).</p>
+                    <p>Por favor, regrese cuando el ID coincida con el día.</p>
+                    <img src="https://via.placeholder.com/400x150/dc3545/ffffff?text=Contenido+Alternativo" alt="Imagen Alternativa">
+                `;
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
