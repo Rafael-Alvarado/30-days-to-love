@@ -28,23 +28,14 @@
 </head>
 <body>
     
-   <div class="fondo p-2 container-fluid ">
-    <div class=" bg-light center border border-danger w-100">
-        <h1 class="text-center"><p class="my-soul-regular "> 30 Dias Para Enamorarte</p></h1>
-        <div class="contenido m-5">
-            <h3 class="text-center">El comienzo de un amor bonito ❤</h3>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 ">Comencé con este día por que para ambos tiene un gran significado, el primer día en que hablamos. Jamás pensé que de algo tan sencillo como puede ser un mensaje, podría obtener una relación tan bonita como la que tengo contigo. Tampoco pensé que en tan poco tiempo podría amar tanto a una persona, es que es imposible contigo, eres tan hermosa, inteligente, sabia, de un corazón de pollito, sincera, te preocupas por los demás, tan excelente madre, eres demasiado pero demasiado especial.</div>
-                <div class="col-sm-12 col-md-6 ">Honestamente durante mucho tiempo pensé que no podría amar a nadie más con tanta intensidad, pero luego te conocí a ti, que, con tu sonrisa, esa preciosa manera de ser y tu mirada que es mi mas hermoso paisaje me terminaría enamorando demasiado. Me has hecho crecer, me has hecho confiar en mi mismo, me has hecho entender que tenemos la capacidad y fuerza para hacer muchas cosas y lo mejor de todo es que en las que no puedo me has demostrado que cuento con tu apoyo, no cambiaria eso por nada en el mundo, pues tu y solo tu me has sabido entender y amar.</div>
-                <div class="col-sm-12 col-md-3 "></div>
-                <div class="col-sm-12 col-md-3 "></div>
-
-            </div>
-        </div>
+   <div class="fondo p-2 container-fluid pt-5 pb-5">
+    <div class=" bg-light center border border-danger w-100 mt-5 pt-5 pb-5 mb-5" id="contenido" >
+        
+    
    </div>
    </div>
 
-    <!-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             // 1. Obtener el ID de la URL
             const urlParams = new URLSearchParams(window.location.search);
@@ -59,12 +50,21 @@
             // 3. Validar y mostrar contenido
             if (idDesdeUrl === diaActual) {
                 // Si el ID de la URL coincide con el día actual
-                if (diaActual === 13 ) {
+                if (diaActual === 16 ) {
                     contenidoDiv.innerHTML = `
-                    <h2 class="my-soul-regular">Hoy es 13</h2>
-                    <p>El ID de la URL (${idDesdeUrl}) coincide con el día actual (${diaActual}).</p>
-                    <p>Aquí puedes mostrar el contenido específico para este día.</p>
-                    <img src="https://via.placeholder.com/400x150/28a745/ffffff?text=Contenido+Principal" alt="Imagen Principal">
+                    <h1 class="text-center pb-2"><p class="my-soul-regular "> 30 Dias Para Enamorarte</p></h1>
+                    <h3 class="text-center pb-2">El comienzo de un amor bonito ❤</h3>
+                    <img src="img/16.JPG" alt="" class="img-fluid pb-2">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-sm-start pb-2">Comencé con este día por que para ambos tiene un gran significado, el primer día en que hablamos. Jamás pensé que de algo tan sencillo como puede ser un mensaje, podría obtener una relación tan bonita como la que tengo contigo. Tampoco pensé que en tan poco tiempo podría amar tanto a una persona, es que es imposible contigo, eres tan hermosa, inteligente, sabia, de un corazón de pollito, sincera, te preocupas por los demás, tan excelente madre, eres demasiado pero demasiado especial.</div>
+                
+                
+                <br /><br />
+                <div class="col-sm-12 col-md-6 text-sm-start pb-2">Honestamente durante mucho tiempo pensé que no podría amar a nadie más con tanta intensidad, pero luego te conocí a ti, que, con tu sonrisa, esa preciosa manera de ser y tu mirada que es mi mas hermoso paisaje me terminaría enamorando demasiado. Me has hecho crecer, me has hecho confiar en mi mismo, me has hecho entender que tenemos la capacidad y fuerza para hacer muchas cosas y lo mejor de todo es que en las que no puedo me has demostrado que cuento con tu apoyo, no cambiaria eso por nada en el mundo, pues tu y solo tu me has sabido entender y amar.</div><br /><br />
+                
+                <div class="col-sm-12 col-md-6 text-sm-start pb-2">Cada vez que pienso en ti, siento bonito en mi corazón, pues solo contigo se siente seguro. Recuerdo que una vez te dije que lo cuidaras, pues se encontraba muy lastimado, pero la verdad es que contigo ha vuelto a amar, pienso en ti y no me arrepiento de nada, de entregarte mi corazón, mis pensamientos, mis caricias, de verdad, que este presente sea un detalle de lo que tu me has hecho cambiar, y mucho amor mío. </div><br /><br />
+                <div class="col-sm-12 col-md-6 text-sm-start pb-2">Siempre recordare este día, el tenerte, el quererte, has marcado una huella en mi corazón tan pero tan profunda, que no saldrás de donde estas, nada ni nadie, solo el mismo Dios o tu pueden alejarme de ti, te amo mucho Elimar y se que siempre lo digo, pero quiero una vida contigo, pero bueno, no diré mas es el primer día, dejare para otros días, solo quiero que sepas lo mucho que te amo y que anhelo compartir mi vida. </div>
+            </div>
                 `;
                 }
                 if (diaActual === 14 ) {
@@ -79,14 +79,17 @@
             else {
                 // Si no coincide o el ID no está presente
                 contenidoDiv.innerHTML = `
-                    <h2>Lo sentimos, acceso denegado.</h2>
-                    <p>El ID de la URL (${idDesdeUrl || 'No especificado'}) no coincide con el día actual (${diaActual}).</p>
-                    <p>Por favor, regrese cuando el ID coincida con el día.</p>
-                    <img src="https://via.placeholder.com/400x150/dc3545/ffffff?text=Contenido+Alternativo" alt="Imagen Alternativa">
+                
+                    <div class="text-center mb-3">
+                        <h1 class="text-center"><p class="my-soul-regular "> 30 Dias Para Enamorarte</p></h1>
+                        <h3>Chama, pero es que tu sinceramente te pasas, la curiosidad te mata</h3>
+                        <img src="/img/OIh.gif" alt="" class="img-fluid">
+                        <h3>Te pasas, yo que pensaba que no ibas a hacerlo, pero Dioss Jajajaja</h3>
+                    </div> 
                 `;
             }
         });
-    </script> -->
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
