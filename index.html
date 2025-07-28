@@ -48,7 +48,7 @@
             const contenidoDiv = document.getElementById('contenido');
 
             // 3. Validar y mostrar contenido
-            if (diaActual >= 29) {
+            if (diaActual >= 16 && idDesdeUrl <= diaActual) {
                 // Si el ID de la URL coincide con el día actual
                 if (idDesdeUrl === 16) {
                     contenidoDiv.innerHTML = `
@@ -286,7 +286,7 @@
                     contenidoDiv.innerHTML = `
                                     <h1 class="text-center pb-2"><p class="my-soul-regular "> 30 Dias Para Enamorarte</p></h1>
                                         <h3 class="text-center pb-2">Un audio inolvidable:</h3>
-                                        <audio id="myAudio" src="aud/28.opus"></audio>
+                                        <audio class="text-center pb-2" src="aud/28.opus"></audio>
                                         <div class="col-sm-12 col-md-6 text-sm-start pb-2">Cómo olvidar este día, el día en el que por primera vez me enviaste un audio con voz de niña. Es que Diooossss, no se que tienen estos audios que me matan tanto, me derriten, es que tu me hablas asi todo cuchi y yo siento que el corazón se me va a salir de pana, me encantas demasiado.</div>
                                         <div class="col-sm-12 col-md-6 text-sm-start pb-2">Quién lo diría, la chica ruda, la puedo con todo, la que se enfrenta a los problemas, la que si la buscas la encuentras, esa misma chica, me iba a estar mandando estos audios jajajaja, no me burlo de ti, es que de verdad estoy impresionado.</div>
                                         <div class="col-sm-12 col-md-6 text-sm-start pb-2">Me encantas mucho Elimar y este tipo de audios me demuestran que tu eres una persona que me trata distinto, anteriormente me decían Rafa madura, no voy a estar haciendo esas cosas, pero el ver que tu lo hagas para mi es de suma alegría, pues veo en ti todo lo que le pedí a Dios y todo lo que siempre quise.</div>
